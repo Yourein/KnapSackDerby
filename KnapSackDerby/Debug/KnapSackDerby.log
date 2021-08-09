@@ -1,0 +1,23 @@
+﻿  Source.cpp
+D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\thirdpartylib\Yourein\details\ints.hpp(41,36): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\thirdpartylib\Yourein\details\sets.hpp(72,33): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\thirdpartylib\Yourein\details\strs.hpp(13,32): warning C4018: '<': signed/unsigned mismatch
+D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\thirdpartylib\Yourein\details\strs.hpp(40,30): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\thirdpartylib\Yourein\details\strs.hpp(51,31): warning C4018: '<': signed/unsigned mismatch
+D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\Source.cpp(48,23): warning C4018: '<': signed/unsigned mismatch
+D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\Source.cpp(224,63): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\Source.cpp(225,45): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\Source.cpp(226,52): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+  KnapSackDerby.vcxproj -> D:\Codes\KnapSackDerby\KSD\KnapSackDerby\Debug\KnapSackDerby.exe
