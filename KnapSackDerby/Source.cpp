@@ -26,16 +26,19 @@ std::vector<std::string> avail;
 std::vector<long long> cost;
 std::vector<long long> skillscore;
 
+//[ILLEGAL GLOBALS (2).int] Anyways, it memorys how much score had added by Priority Choice.
+int editedsum = 0;
+
 //Show WARNING MESSAGE for Skill input, for each.
 void Ginput_warning() {
     Yconsole::ConsoleWrite(Console, "距離/脚質適正がないスキルは選ばないでください", CON_LRED);
-    std::cout << "取得可能なスキルID(スキル横の番号)をスペース区切りで選択してください" << std::endl;
+    std::cout << "取得可能なスキルID(スキル横の番号)をスペース区切りで選択してください(ない場合はそのままEnter)" << std::endl;
 }
 
 void Ninput_warning() {
     Yconsole::ConsoleWrite(Console, "距離/脚質適正がないスキルは選ばないでください。二段階あるスキル(○、◎系のやつ)は○前提で計算します。", CON_LRED);
     Yconsole::ConsoleWrite(Console, "また、取得可能な金スキルの前提スキルも選ばないでください(金スキルのみで計算をします)", CON_LRED);
-    std::cout << "取得可能なスキルID(スキル横の番号)をスペース区切りで選択してください" << std::endl;
+    std::cout << "取得可能なスキルID(スキル横の番号)をスペース区切りで選択してください(ない場合はそのままEnter)" << std::endl;
 }
 
 //Input getter for skills.
@@ -208,6 +211,18 @@ void cost_getter() {
         else {
             cost[i] = stoi(costtemp);
         }
+
+        int priority;
+        std::cout << avail[i] << "の優先度はどの程度ですか? [1:欲しい, 2(1,3以外):普通, 3:そこまで] : ";
+        std::cin >> priority;
+
+        if (priority == 1) {
+            editedsum += 50;
+            skillscore[i] += 50;
+        }
+        else if (priority == 3) {
+            skillscore[i] -= 50;
+        }
     }
     Yconsole::CLEAR();
 }
@@ -215,7 +230,7 @@ void cost_getter() {
 void solve() {
     int N = avail.size(); // long W = Skillpoint;
     int Skillpoint = 0;
-    std::cout << "現在使用可能なスキルポイントを入力してください";
+    std::cout << "現在使用可能なスキルポイントを入力してください : ";
     std::cin >> Skillpoint;
 
     std::vector<std::vector<long long>> dp(avail.size() + 1, std::vector<long long>(Skillpoint + 1, 0));
@@ -242,7 +257,7 @@ void solve() {
     }
     std::cout << std::endl;
 
-    std::cout << dp[N][Skillpoint] << std::endl;
+    std::cout << "上のスキル獲得で   " << dp[N][Skillpoint] - editedsum << "   程度の評価点が獲得可能です。\n(実際の評価点から±50くらいすることがあります。)" << std::endl;
 }
 
 int main() {
