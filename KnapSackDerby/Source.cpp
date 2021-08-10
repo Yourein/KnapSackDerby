@@ -48,6 +48,7 @@ void availgetter(json& jdata) {
     std::getline(std::cin, in);
     formatedinput = Yourein::strs::pinput(in, ' ');
 
+    std::sort(formatedinput.begin(), formatedinput.end());
     formatedinput.erase(std::unique(formatedinput.begin(), formatedinput.end()), formatedinput.end());
 
     for (int i = 0; i < formatedinput.size(); i++) {
@@ -230,7 +231,7 @@ void cost_getter() {
 }
 
 void solve() {
-    int N = avail.size(); // long W = Skillpoint;
+    int N = avail.size();
     int Skillpoint = 0;
     std::cout << "現在使用可能なスキルポイントを入力してください : ";
     std::cin >> Skillpoint;
