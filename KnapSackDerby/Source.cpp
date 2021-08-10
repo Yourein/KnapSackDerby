@@ -48,6 +48,8 @@ void availgetter(json& jdata) {
     std::getline(std::cin, in);
     formatedinput = Yourein::strs::pinput(in, ' ');
 
+    formatedinput.erase(std::unique(formatedinput.begin(), formatedinput.end()), formatedinput.end());
+
     for (int i = 0; i < formatedinput.size(); i++) {
         int ind = stoi(formatedinput[i]);
         avail.push_back(jdata["Skill"][ind]["name"]);
@@ -265,4 +267,5 @@ int main() {
     input_avail();
     cost_getter();
     solve();
+    system("PAUSE");
 }

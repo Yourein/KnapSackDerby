@@ -4,18 +4,18 @@ D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\thirdpartylib\Yourein\det
 D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\thirdpartylib\Yourein\details\strs.hpp(13,32): warning C4018: '<': signed/unsigned mismatch
 D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\thirdpartylib\Yourein\details\strs.hpp(40,30): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
 D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\thirdpartylib\Yourein\details\strs.hpp(51,31): warning C4018: '<': signed/unsigned mismatch
-D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\Source.cpp(51,23): warning C4018: '<': signed/unsigned mismatch
-D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\Source.cpp(242,63): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\Source.cpp(53,23): warning C4018: '<': signed/unsigned mismatch
+D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\Source.cpp(244,63): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
           with
           [
               _Ty=__int64
           ]
-D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\Source.cpp(243,45): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\Source.cpp(245,45): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
           with
           [
               _Ty=__int64
           ]
-D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\Source.cpp(244,52): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+D:\Codes\KnapSackDerby\KSD\KnapSackDerby\KnapSackDerby\Source.cpp(246,52): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
           with
           [
               _Ty=__int64
